@@ -4,12 +4,12 @@ if not _G.ClothingPhysicsFix then
     local physics_disabled_until = 0
     local DISABLE_ON_ENTER = 2.0
 
-    local VANILLA_STYLES = dofile(ModPath .. "vanilla_styles.lua") or {}
+    local STYLES = dofile(ModPath .. "styles.lua") or {}
 
     local function is_modded_outfit()
         local style = managers.blackmarket and managers.blackmarket:equipped_player_style()
         if not style then return false end
-        return not VANILLA_STYLES[style]
+        return not STYLES[style]
     end
 
     local function set_bodies_enabled(unit, enabled)
