@@ -1,5 +1,5 @@
 # Clothing Physics Fix
-![Bug](Bug.png)
+![Preview](Preview.png)
 ## Notes
 - Test
 ## Installation
