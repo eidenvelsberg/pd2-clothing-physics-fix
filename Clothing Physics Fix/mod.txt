@@ -1,0 +1,20 @@
+{
+    "name": "Clothing Physics Fix",
+    "description": "Trying to fix the broken cloth physics",
+    "author": "Eiden Velsberg (Kelvges)",
+    "contact": "@EidenVelsberg (Discord)",
+    "version": "0.1.0",
+    "color": "0 0 0",
+    "updates": [
+        {
+            "identifier": "ClothingPhysicsFix",
+            "host": {
+                "meta": "https://raw.githubusercontent.com/eidenvelsberg/pd2-clothing-physics-fix/main/meta.json"
+            }
+        }
+    ],
+    "hooks": [
+        { "hook_id": "lib/managers/menumanager", "script_path": "main.lua" },
+        { "hook_id": "lib/managers/menu/menuscenemanager", "script_path": "main.lua" }
+    ]
+}
